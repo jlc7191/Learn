@@ -68,23 +68,13 @@
         background:#fff;
 
     }
-    table {
-        width:80%;
-        border:3px solid black;
-        border-collapse:collapse;
-        margin:0 auto;
-    }
-    td, th {
-        border:1px solid black;
-        padding:4px;
-    }
-    th {
-        text-align:center;
+    #s-sidenav {
+        height:100%;
     }
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<div class="container-fluid">
+<div id="s-sidenav" class="container-fluid">
     <div class="row">
         <div class="col-sm-2 sidenav">
             <ul class="nav nav-pills nav-stacked">
@@ -95,21 +85,7 @@
             </ul>
         </div>
             <div class="col-sm-10">
-                <table>
-                    <thead>
-                        <tr><th>日期</th><th>星期</th><th>上課內容</th><th>代辦事項</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>12/27</td><td>四</td><td><a href="https://www.facebook.com/groups/1950453395261747">FB</a></td><td>過年前裝好AdobeXD</td></tr>
-                        <tr><td>12/28</td><td>五</td><td></td><td></td></tr>
-                        <tr><td>12/29</td><td></td><td></td><td></td></tr>
-                        <tr><td>12/30</td><td></td><td></td><td></td></tr>
-                        <tr><td>12/31</td><td></td><td></td><td></td></tr>
-                        <!--
-                        <tr><td></td><td></td><td></td><td></td></tr>
-                        -->
-                    </tbody>
-                </table>
+                
             </div>
         </div>
     </div>
@@ -123,7 +99,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand" href="/index.html">Shawn.Code</a>
+            <a class="navbar-brand" href="#myPage">Shawn.Code</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
