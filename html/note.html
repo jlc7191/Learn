@@ -8,13 +8,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-    .container-fluid {
-        padding: 50px 0 0 0;
-        height:100%;
-    }
-    .bg-grey {
-        background-color: #f6f6f6;
-    }
     .logo {
         color: #000000;
         font-size: 50px;
@@ -66,54 +59,71 @@
     }
     .sidenav li a:hover {
         background:#fff;
-
     }
-    table {
-        width:80%;
-        border:3px solid black;
-        border-collapse:collapse;
-        margin:0 auto;
+    * {
+        font-family: Verdana;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
-    td, th {
-        border:1px solid black;
-        padding:4px;
+    body {
+        padding: 50px 0;
+        height:100%;
     }
-    th {
-        text-align:center;
+    .article-top {
+        margin:5%;
+        padding:5%;
+        font-size:5vw;
+    }
+    .article-tag {
+        margin:5%;
+        padding: 5%;
+        font-size: 2vw;
+    }
+    .article-body {
+        margin:5% 10% 20% 10%;
+        padding: 2vw;
+    }
+    .article-header {
+        font-size:3vw;
+    }
+    .article-footer {
+        margin:20% 0;
+        font-size:2vw;
+        line-height: 5vw;
+    }
+    .article-footer img {
+        width:100%;
     }
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-2 sidenav">
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a></li>
-                <li><a href="">Javascript</a></li>
-                <li><a href="">jQuery</a></li>
-            </ul>
+        <div class="col-sm-6">
+            <div class="article-top">
+                <span>Article</span>
+            </div>
         </div>
-            <div class="col-sm-10">
-                <table>
-                    <thead>
-                        <tr><th>日期</th><th>星期</th><th>上課內容</th><th>代辦事項</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><a href="/basic/date1227.html">12/27</a></td><td>四</td><td><a href="https://www.facebook.com/groups/1950453395261747">FB</a><br>環境設定模組安裝<br>html基礎元素標籤介紹</td><td>過年前裝好AdobeXD</td></tr>
-                        <tr><td>12/28</td><td>五</td><td></td><td></td></tr>
-                        <tr><td>12/29</td><td>六</td><td></td><td></td></tr>
-                        <tr><td>12/30</td><td>日</td><td></td><td></td></tr>
-                        <tr><td>12/31</td><td>一</td><td></td><td></td></tr>
-                        <!--
-                        <tr><td></td><td></td><td></td><td></td></tr>
-                        -->
-                    </tbody>
-                </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="article-body">
+                <div class="row">
+                    <div class="article-header">
+                        <span>HTML</span>
+                    </div>
+                    <div class="article-footer">
+                        <img src="/pic/work01.jpg">
+                        <span>Basic</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -127,12 +137,15 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"></a></li>
+                <li><a href="#p-html">HTML</a></li>
+                <li><a href="#p-css">CSS</a></li>
+                <li><a href="#p-javascript">Javascript</a></li>
+                <li><a href="#p-jquery">jQuery</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<footer class="container-fluid text-center" style="height:5%">
+<footer class="container-fliud text-center" style="height:1%">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"><br>TOP</span>
     </a>
