@@ -8,9 +8,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-    .bg-grey {
-        background-color: #f6f6f6;
-    }
     .logo {
         color: #000000;
         font-size: 50px;
@@ -63,45 +60,53 @@
     .sidenav li a:hover {
         background:#fff;
     }
-    .article {
-        background-color: #EAE2DA;
-        font-family:Arial;
+    * {
+        font-family: Verdana;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
-    .article-top {
-        background-color: #EAE2DA;
-        font-family:Arial;
-    }
-    .article-header {
-        padding: 0 1%;
-        margin: auto;
-    }
-    .container-fluid {
+    body {
         padding: 50px 0 0 0;
         height:100%;
+    }
+    .article-top {
+        margin:5%;
+        padding:5%;
+        background:yellow;
+    }
+    .article-tag {
+        margin:5%;
+        padding: 5%;
+        background-color: yellow;
     }
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <div class="container-fluid">
     <div class="row">
-        <div class="article-top">
-            <h1>文章收錄</h1>
+        <div class="col-sm-6">
+            <div class="article-top">
+                <span>Article</span>
+            </div>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="article-tag">
+                <span>tag</span>
+            </div>
         </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-6">
-            <div class="article">
-                <div class="article-header"><h2>simple-header</h2></div>
-                <div class="article-body"><h3>simple-body</h3></div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-8">HTML</div>
+                <div class="col-sm-4">12.8</div>
             </div>
-        </div>
-        <div class="col-sm-6">
-                <div class="article">
-                        <div class="article-header"><h2>HTML</h2></div>
-                        <div class="article-body"><h3>simple-body</h3></div>
-                </div>
+            <div class="row">
+                <span>Content</span>
+            </div>
         </div>
     </div>
 </div>
@@ -113,7 +118,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
             </button>
-            <a class="navbar-brand" href="#myPage">Shawn.Code</a>
+            <a class="navbar-brand" href="/index.html">Shawn.Code</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
