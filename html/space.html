@@ -67,18 +67,33 @@
         box-sizing: border-box;
     }
     body {
-        padding: 50px 0 0 0;
+        padding: 50px 0;
         height:100%;
     }
     .article-top {
         margin:5%;
         padding:5%;
-        background:yellow;
+        font-size:5vw;
     }
     .article-tag {
         margin:5%;
         padding: 5%;
-        background-color: yellow;
+        font-size: 2vw;
+    }
+    .article-body {
+        margin:5% 10% 20% 10%;
+        padding: 2vw;
+    }
+    .article-header {
+        font-size:3vw;
+    }
+    .article-footer {
+        margin:20% 0;
+        font-size:2vw;
+        line-height: 5vw;
+    }
+    .article-footer img {
+        width:100%;
     }
 </style>
 </head>
@@ -90,22 +105,22 @@
                 <span>Article</span>
             </div>
         </div>
-        <div class="col-sm-6 ">
-            <div class="article-tag">
-                <span>tag</span>
-            </div>
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-sm-8">HTML</div>
-                <div class="col-sm-4">12.8</div>
-            </div>
-            <div class="row">
-                <span>Content</span>
+        <div class="col-sm-3">
+            <div class="article-body">
+                <div class="row">
+                    <div class="article-header">
+                        <span>HTML</span>
+                    </div>
+                    <div class="article-footer">
+                        <img src="/pic/work01.jpg">
+                        <span>Basic</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
