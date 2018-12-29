@@ -8,6 +8,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
+    * {
+        font-family: Verdana, 微軟正黑體;
+    }
+    .container-fluid {
+        padding: 2% 5%
+    }
     .logo {
         color: #000000;
         font-size: 50px;
@@ -50,85 +56,56 @@
         padding: 50px 0;
         height:100%;
     }
-    .article-top {
-        margin:5%;
-        padding:5%;
-        font-size:3vw;
+    .article {
+        background: yellow;
     }
-    .article-tag {
-        margin:5%;
-        padding: 5%;
-        font-size: 2vw;
+    .article img{
+        box-shadow: 0px 0px 20px 2px black;
+        max-width: 100%;
+        max-height: 100%;
     }
-    .article-body {
-        margin:5% 10% 20% 10%;
-        padding: 2vw;
-    }
-    .article-header {
-        font-size:3vw;
-    }
-    .article-footer {
-        margin:20% 0;
-        font-size:2vw;
-        line-height: 5vw;
-    }
-    .article-footer img {
-        width:100%;
+    .article img:hover {
+        opacity: 0.8;
+        box-shadow: 0px 0px 20px 5px black;
     }
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<div id="html" class="container-fluid">
+<div id="website" class="container-fluid">
+    <h1>Website</h1>
     <div class="row">
-        <div class="col-sm-6">
-            <div class="article-top">
-                <h1>HTML Article</h1>
+        <div class="col-sm-2 article">
+            <div class="articlelogo">
+                <a href="https://www.w3schools.com/" target="_blank"><img src="/pic/logo-w3school.jpg"></a>
             </div>
+            <h2>W3school</h2>
+            <h4>前後端語言學習網站</h4>
         </div>
+        <div class="col-sm-2 article">
+             <div class="articlelogo">
+                <a href="https://www.w3schools.com/"><img src="/pic/work01.jpg"></a>
+            </div>
+            <h2>W3school</h2>
+            <h4>前後端語言學習網站</h4>
         </div>
     </div>
 </div>
-<div  class="container">
+<div id="color" class="container-fluid">
+    <h1>Website</h1>
     <div class="row">
-        <div class="col-sm-3">
-            <div class="article-body">
-                <div class="row">
-                    <div class="article-header">
-                        <h2>HTML:</h2>
-                    </div>
-                    <div class="article-footer">
-                        <img src="/pic/work01.jpg">
-                        <h3>Basic</h3>
-                    </div>
-                </div>
+        <div class="col-sm-2 article">
+            <div class="articlelogo">
+                <a href="https://www.w3schools.com/"><img src="/pic/logo-w3school.jpg"></a>
             </div>
+            <h2>W3school</h2>
+            <h4>前後端語言學習網站</h4>
         </div>
-    </div>
-</div>
-<div id="css" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="article-top">
-                <h1>CSS Article</h1>
+        <div class="col-sm-2 article">
+             <div class="articlelogo">
+                <a href="https://www.w3schools.com/"><img src="/pic/work01.jpg"></a>
             </div>
-        </div>
-    </div>
-</div>
-<div id="javascript" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="article-top">
-                    <h1>Javascript Article</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-<div id="jquery" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="article-top">
-                <h1>jQuery Article</h1>
-            </div>
+            <h2>W3school</h2>
+            <h4>前後端語言學習網站</h4>
         </div>
     </div>
 </div>
@@ -144,10 +121,12 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#html">HTML</a></li>
-                <li><a href="#css">CSS</a></li>
-                <li><a href="#javascript">Javascript</a></li>
-                <li><a href="#jquery">jQuery</a></li>
+                <li><a href="#website">Web</a></li>
+                <li><a href="#color">Color</a></li>
+                <li><a href="#picture">Pic</a></li>
+                <li><a href="#icon">Icon</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#community">Community</a></li>
             </ul>
         </div>
     </div>
